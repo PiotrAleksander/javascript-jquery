@@ -1,6 +1,5 @@
-
-// mr RebootJeff jest autorem skryptu https://github.com/RebootJeff/myLearning/blob/master/odin.js.sketch_pad
-var start = function(option){
+// skrypt wzorowany na pracy RebootJeffa https://github.com/RebootJeff/myLearning/blob/master/odin.js.sketch_pad
+var start = function(option){ // option wybierany jest w komendzie switch
 	$('#grid_container').html("");
 
 	var input = prompt('Wprowadź liczbę całkowitą od 1 do 128');
@@ -27,16 +26,6 @@ var start = function(option){
 					if(currentOpacity > 0){
 						$(this).css('opacity', currentOpacity - 0.1);
 					}
-					break;
-				case 3:
-				
-					//animowane do 0% opacity(mętności!) w 100ms, potem z powrotem do 100% w 400ms
-						
-	
-					$(this).fadeTo(100,0);
-					$(this).mouseleave(function(){
-						$(this).fadeTo(400,1);
-					});
 					break;
 			}
 		});
